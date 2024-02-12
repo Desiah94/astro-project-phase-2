@@ -7,26 +7,35 @@ const ZodiacSign = () => {
 
   useEffect(() => {
     // Fetch data for the specific zodiac sign
-    fetch(`http://localhost:3000/zodiacSigns/${sign}`)
+    fetch(`http://localhost:3001/zodiacSigns?name=${sign}`)
       .then(response => response.json())
-      .then(data => setZodiacData(data))
+      .then(data => {
+        // Assuming there's only one zodiac sign with the given name
+        // If there are multiple, you may need to handle this differently
+        if (data.length > 0) {
+          setZodiacData(data[0]);
+        } else {
+          console.error(`Zodiac sign ${sign} not found.`);
+        }
+      })
       .catch(error => console.error('Error fetching zodiac data:', error));
   }, [sign]);
 
-  if (!zodiacData) {
-    return <div>Loading...</div>;
-  }
-
-  const { traits, rulingPlanet, element, symbol, compatibility } = zodiacData;
-
+  // Dynamic JSX rendering based on the zodiacData state
   return (
     <div>
-      <h2>{sign}</h2>
-      <p><strong>Traits:</strong> {traits}</p>
-      <p><strong>Ruling Planet:</strong> {rulingPlanet}</p>
-      <p><strong>Element:</strong> {element}</p>
-      <p><strong>Symbol:</strong> {symbol}</p>
-      <p><strong>Compatibility:</strong> {compatibility}</p>
+      {!zodiacData ? (
+        <div>Loading...</div>
+      ) : (
+        <div>
+          <h2>{sign}</h2>
+          <p><strong>Traits:</strong> {zodiacData.traits}</p>
+          <p><strong>Ruling Planet:</strong> {zodiacData.rulingPlanet}</p>
+          <p><strong>Element:</strong> {zodiacData.element}</p>
+          <p><strong>Symbol:</strong> {zodiacData.symbol}</p>
+          <p><strong>Compatibility:</strong> {zodiacData.compatibility}</p>
+        </div>
+      )}
     </div>
   );
 }

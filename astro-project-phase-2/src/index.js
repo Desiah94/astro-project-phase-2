@@ -19,4 +19,4 @@ root.render(
 reportWebVitals();
 
 // You can use the 'firebase' variable somewhere in your code
-console.log(firebase);
+console.log(firebase);                            

@@ -1,11 +1,27 @@
 import React from 'react';
+import { fetchData } from './DataService';
 
 
 const ZodiacSign = ({ sign }) => {
+  
+
+  useEffect(() => {
+    const fetchDataFromJson = async () => {
+      const data = await fetchData();
+      setZodiacData(data.zodiacSigns.find((zodiac) => zodiac.name.toLowerCase() === sign.toLowerCase()));
+    };
+    fetchDataFromJson();
+  }, [sign]);
+
+
   const handleClick = () => {
     // Display a message or perform an action based on the clicked zodiac sign
     alert(`You clicked on ${sign}.`);
   };
+
+  if (!zodiacData) {
+    return <div>Loading...</div>;
+  }
 
   const zodiacData = {
     aries: {
@@ -95,7 +111,12 @@ const ZodiacSign = ({ sign }) => {
   };
 
   const { traits, rulingPlanet, element, symbol, compatibility } = zodiacData[sign.toLowerCase()];
-
+  
+  const fetchDataFromJson = async () => {
+    const data = await fetchData();
+    // Use the data as needed in your component
+  };
+  
   return (
     <div>
       <h2 onClick={handleClick}>{sign}</h2>

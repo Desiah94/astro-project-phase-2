@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { fetchData } from './DataService';
 
 const CommentSection = ({ sign }) => {
   const [comment, setComment] = useState('');
@@ -14,7 +15,12 @@ const CommentSection = ({ sign }) => {
     // Add your onClick logic here
     alert('You clicked on the Comment Section.');
   };
-
+  const fetchDataFromJson = async () => {
+    const data = await fetchData();
+    // Use the data as needed in your component
+  };
+  
+  
   return (
     <div onClick={handleOnClick}>
       <h2>Comments for {sign}</h2>

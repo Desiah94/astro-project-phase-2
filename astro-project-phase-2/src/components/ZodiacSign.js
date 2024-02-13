@@ -1,43 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import CommentSection from './CommentSection';
 
 const ZodiacSign = () => {
-  const { sign } = useParams();
-  const [zodiacData, setZodiacData] = useState(null);
+  const [zodiacSigns, setZodiacSigns] = useState([]);
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    // Fetch data for the specific zodiac sign
-    fetch(`http://localhost:3001/zodiacSigns?name=${sign}`)
+    fetch('http://localhost:3000/zodiacSigns')
       .then(response => response.json())
-      .then(data => {
-        // Assuming there's only one zodiac sign with the given name
-        // If there are multiple, you may need to handle this differently
-        if (data.length > 0) {
-          setZodiacData(data[0]);
-        } else {
-          console.error(`Zodiac sign ${sign} not found.`);
-        }
-      })
-      .catch(error => console.error('Error fetching zodiac data:', error));
-  }, [sign]);
+      .then(data => setZodiacSigns(data))
+      .catch(error => console.error('Error fetching zodiac signs:', error));
 
-  // Dynamic JSX rendering based on the zodiacData state
+    fetch('http://localhost:3000/comments')
+      .then(response => response.json())
+      .then(data => setComments(data))
+      .catch(error => console.error('Error fetching comments:', error));
+  }, []);
+
   return (
     <div>
-      {!zodiacData ? (
-        <div>Loading...</div>
-      ) : (
-        <div>
-          <h2>{sign}</h2>
-          <p><strong>Traits:</strong> {zodiacData.traits}</p>
-          <p><strong>Ruling Planet:</strong> {zodiacData.rulingPlanet}</p>
-          <p><strong>Element:</strong> {zodiacData.element}</p>
-          <p><strong>Symbol:</strong> {zodiacData.symbol}</p>
-          <p><strong>Compatibility:</strong> {zodiacData.compatibility}</p>
+      {zodiacSigns.map(sign => (
+        <div key={sign.id}>
+          <h2>{sign.name}</h2>
+          <img src={sign.imageURL} alt={sign.name} />
+          <p>{sign.description}</p>
+          <CommentSection
+            comments={comments.filter(comment => comment.zodiacSignId === sign.id)}
+          />
         </div>
-      )}
+      ))}
     </div>
   );
-}
+};
 
 export default ZodiacSign;

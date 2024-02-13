@@ -1,28 +1,37 @@
+// Subscription.js
 import React, { useState } from 'react';
 
-const Subscription = ({ sign }) => {
-  const [subscribed, setSubscribed] = useState(false);
+const Subscription = () => {
+  const [email, setEmail] = useState('');
 
-  const handleSubscribe = () => {
-    // Handle subscription logic
-    setSubscribed(true);
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
   };
 
-  const handleOnClick = () => {
-    // Add your onClick logic here
-    alert('You clicked on the Subscription button.');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your subscription logic here
+    alert(`You have subscribed with email: ${email}`);
+    setEmail('');
   };
 
   return (
     <div>
-      <h2 onClick={handleOnClick}>Subscribe to {sign} Comments</h2>
-      {subscribed ? (
-        <p>You are subscribed to {sign} comments.</p>
-      ) : (
-        <button onClick={handleSubscribe}>Subscribe</button>
-      )}
+      <h2>Subscription</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Email:
+          <input
+            type="email"
+            value={email}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
   );
-}
+};
 
 export default Subscription;

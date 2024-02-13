@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import firebase from './firebase'; // Import your Firebase configuration
+// import firebase from './firebase'; // Import your Firebase configuration
 
 // Use createRoot instead of ReactDOM.render
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,4 +19,4 @@ root.render(
 reportWebVitals();
 
 // You can use the 'firebase' variable somewhere in your code
-console.log(firebase);                            
+// console.log(firebase);                            

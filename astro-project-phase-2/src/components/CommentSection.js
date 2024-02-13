@@ -1,19 +1,17 @@
+// CommentSection.js
 import React, { useState } from 'react';
 import { fetchData } from './DataService';
 
-const CommentSection = ({ sign }) => {
-  const [comment, setComment] = useState('');
+const CommentSection = ({ comments }) => {
+  const [newComment, setNewComment] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle submitting comment to the database
-    console.log('Comment submitted:', comment);
-    setComment('');
-  };
-
-  const handleOnClick = () => {
-    // Add your onClick logic here
-    alert('You clicked on the Comment Section.');
+  const handleCommentSubmit = () => {
+    // Here you can perform any actions related to submitting a comment,
+    // such as sending it to a server or updating the state.
+    // For now, let's just display an alert when a comment is posted.
+    alert('Your comment has been posted!');
+    // Clear the input field after submitting the comment
+    setNewComment('');
   };
   const fetchDataFromJson = async () => {
     const data = await fetchData();
@@ -22,15 +20,26 @@ const CommentSection = ({ sign }) => {
   
   
   return (
-    <div onClick={handleOnClick}>
-      <h2>Comments for {sign}</h2>
-      <form onSubmit={handleSubmit}>
-        <textarea value={comment} onChange={(e) => setComment(e.target.value)} />
-        <button type="submit">Submit</button>
-      </form>
-      {/* Display comments from the database */}
+    <div>
+      <h2>Comments</h2>
+      <ul>
+        {comments.map((comment, index) => (
+          <li key={index}>{comment}</li>
+        ))}
+      </ul>
+      <div>
+        <textarea
+          value={newComment}
+          onChange={e => setNewComment(e.target.value)}
+          rows={4}
+          cols={50}
+          placeholder="Write your comment here..."
+        ></textarea>
+        <br />
+        <button onClick={handleCommentSubmit}>Post Comment</button>
+      </div>
     </div>
   );
-}
+};
 
 export default CommentSection;

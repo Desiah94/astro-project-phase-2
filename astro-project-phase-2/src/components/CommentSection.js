@@ -1,5 +1,6 @@
 // CommentSection.js
 import React, { useState } from 'react';
+import { fetchData } from './DataService';
 
 const CommentSection = ({ comments }) => {
   const [newComment, setNewComment] = useState('');
@@ -12,7 +13,12 @@ const CommentSection = ({ comments }) => {
     // Clear the input field after submitting the comment
     setNewComment('');
   };
-
+  const fetchDataFromJson = async () => {
+    const data = await fetchData();
+    // Use the data as needed in your component
+  };
+  
+  
   return (
     <div>
       <h2>Comments</h2>

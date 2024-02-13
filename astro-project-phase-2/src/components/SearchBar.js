@@ -1,4 +1,5 @@
 // SearchBar.js
+
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
@@ -10,7 +11,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div>
+    <div className="search-bar"> {/* Apply the search-bar class here */}
       <input
         type="text"
         placeholder="Search zodiac signs..."

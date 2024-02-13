@@ -3,7 +3,7 @@ import React from 'react';
 const NavigationBar = () => {
   return (
     <div>
-      <h1>Welcome to Astro World</h1>
+      <h1>Welcome to Astro Honey</h1>
     </div>
   );
 };

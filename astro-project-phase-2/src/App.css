@@ -26,3 +26,18 @@
 .zodiac-card p {
   margin-top: 10px; /* Add some space between image and description */
 }
+/* App.css */
+
+/* Center all text and boxes */
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* App.css */
+
+/* Add space between search bar and grid */
+.search-bar {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}

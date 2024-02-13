@@ -1,35 +1,34 @@
-// Subscription.js
 import React, { useState } from 'react';
 
 const Subscription = () => {
   const [email, setEmail] = useState('');
 
-  const handleInputChange = (e) => {
-    setEmail(e.target.value);
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your subscription logic here
-    alert(`You have subscribed with email: ${email}`);
-    setEmail('');
+  const handleSubscribe = () => {
+    // You can perform any validation here before subscribing
+    if (email.trim() === '') {
+      alert('Please enter your email!');
+      return;
+    }
+
+    // Assuming subscription is successful, show an alert
+    alert(`Thank you for subscribing with ${email}!`);
+    // You can also send the email to the server or perform other actions
   };
 
   return (
     <div>
-      <h2>Subscription</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <button type="submit">Subscribe</button>
-      </form>
+      <h2>Subscribe to Zodiac Updates</h2>
+      <input
+        type="email"
+        value={email}
+        onChange={handleEmailChange}
+        placeholder="Enter your email"
+      />
+      <button onClick={handleSubscribe}>Subscribe</button>
     </div>
   );
 };

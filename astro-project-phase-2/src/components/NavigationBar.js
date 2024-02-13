@@ -1,15 +1,10 @@
-// NavigationBar.js
 import React from 'react';
 
 const NavigationBar = () => {
   return (
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div>
+      <h1>Welcome to Astro World</h1>
+    </div>
   );
 };
 

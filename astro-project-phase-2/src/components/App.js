@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import CommentSection from './CommentSection';
 import NavigationBar from './NavigationBar';
 import ZodiacSign from './ZodiacSign';
 import Subscription from './Subscription';
+import SearchBar from './SearchBar';
 
 const App = () => {
   const [zodiacData, setZodiacData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('/db.json') // Fetching data from the public folder
+    fetch('/db.json')
       .then(response => response.json())
-      .then(data => setZodiacData(data.zodiacSigns)); // Extracting zodiac signs data
+      .then(data => setZodiacData(data.zodiacSigns));
   }, []);
 
   return (
     <div>
       <NavigationBar />
-      <ZodiacSign zodiacSigns={zodiacData} /> {/* Passing zodiacSigns as a prop */}
+      <SearchBar onSearch={setSearchTerm} />
+      <ZodiacSign zodiacSigns={zodiacData} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Subscription />
-      <CommentSection />
     </div>
   );
 }

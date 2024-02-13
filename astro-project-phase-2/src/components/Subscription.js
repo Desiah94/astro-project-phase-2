@@ -10,12 +10,12 @@ const Subscription = () => {
   const handleSubscribe = () => {
     // You can perform any validation here before subscribing
     if (email.trim() === '') {
-      alert('Please enter your email!');
+      alert('email please!');
       return;
     }
 
     // Assuming subscription is successful, show an alert
-    alert(`Thank you for subscribing with ${email}!`);
+    alert(`Stay connected with Astro Honey! ${email}!`);
     // You can also send the email to the server or perform other actions
   };
 

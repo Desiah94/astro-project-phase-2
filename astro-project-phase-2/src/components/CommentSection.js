@@ -1,16 +1,33 @@
-// import React from 'react';
+import React, { useState } from 'react';
 
-// const CommentSection = ({ comments }) => {
-//   return (
-//     <div>
-//       <h3>Comments:</h3>
-//       <ul>
-//         {comments.map(comment => ( // Change variable name to 'comment'
-//           <li key={comment.id}>{comment.text}</li> // Change variable name to 'comment'
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
+const CommentSection = ({ zodiacSign }) => {
+  const [comment, setComment] = useState('');
+  const [comments, setComments] = useState([]);
 
-// export default CommentSection;
+  const handleAddComment = () => {
+    setComments([...comments, comment]);
+    setComment('');
+  };
+
+  return (
+    <div>
+      <h3>{zodiacSign}-comments</h3>
+      <ul>
+        {comments.map((comment, index) => (
+          <li key={index}>{comment}</li>
+        ))}
+      </ul>
+      <div>
+        <input
+          type="text"
+          placeholder="Your comment"
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+        />
+        <button onClick={handleAddComment}>Add Comment</button>
+      </div>
+    </div>
+  );
+}
+
+export default CommentSection;

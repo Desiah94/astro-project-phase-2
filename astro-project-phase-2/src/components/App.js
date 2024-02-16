@@ -1,4 +1,3 @@
-// this is App : 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
@@ -10,11 +9,42 @@ import CommentSection from './CommentSection';
 const App = () => {
   const [zodiacData, setZodiacData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [comments, setComments] = useState([]);
+  const [newComment, setNewComment] = useState('');
+
+  const fetchComments = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/comments');
+      const data = await response.json();
+      setComments(data);
+    } catch (error) {
+      console.error('Error fetching comments:', error);
+    }
+  };
+
+  const postComment = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/comments', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ text: newComment }),
+      });
+      const data = await response.json();
+      console.log('Response from posting comment:', data);
+      fetchComments();
+      setNewComment('');
+    } catch (error) {
+      console.error('Error posting comment:', error);
+    }
+  };
 
   useEffect(() => {
     fetch('/db.json')
       .then(response => response.json())
       .then(data => setZodiacData(data.zodiacSigns));
+    fetchComments();
   }, []);
 
   const filteredZodiacData = searchTerm
@@ -40,7 +70,14 @@ const App = () => {
             </>
           } />
           <Route path="/subscription" element={<Subscription />} />
-          <Route path="/comments" element={<CommentSection />} />
+          <Route path="/comments" element={
+            <CommentSection
+              comments={comments}
+              newComment={newComment}
+              onNewCommentChange={setNewComment}
+              onPostComment={postComment}
+            />
+          } />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,5 +1,3 @@
-// ZodiacSign.js
-
 import React from 'react';
 import CommentSection from './CommentSection';
 import '../App.css'; // Import the CSS file
@@ -12,7 +10,7 @@ const ZodiacSign = ({ zodiacSigns }) => {
           <h2>{zodiac.name}</h2>
           <img src={zodiac.imageURL} alt={zodiac.name} />
           <p>{zodiac.description}</p>
-          <CommentSection zodiacSign={zodiac.name} /> {/* Pass the zodiac sign name to CommentSection */}
+          <CommentSection zodiacSign={zodiac.name} />
         </div>
       ))}
     </div>

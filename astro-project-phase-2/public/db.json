@@ -4,186 +4,196 @@
       "id": 1,
       "name": "Aries",
       "description": "Aries is the first sign of the zodiac, and that's pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete.",
-      "traits": "Confident, courageous, enthusiastic",
-      "rulingPlanet": "Mars",
-      "element": "Fire",
-      "symbol": "Ram",
-      "compatibility": "Leo, Sagittarius",
-      "imageURL": "https://www.astrograph.com/images/signs/1Aries-InfoGraphic.jpg",
-      "comments": [
-        { "id": 1, "text": "Comment for Aries" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/1Aries-InfoGraphic.jpg"
     },
     {
       "id": 2,
       "name": "Taurus",
       "description": "The second sign of the zodiac, Taurus is ruled by Venus, the planet of love, luxury, and beauty. The Taurus zodiac sign is known for being reliable, practical, ambitious, and sensual, with an appreciation for the finer things in life.",
-      "traits": "Patient, reliable, affectionate",
-      "rulingPlanet": "Venus",
-      "element": "Earth",
-      "symbol": "Bull",
-      "compatibility": "Virgo, Capricorn",
-      "imageURL": "https://www.astrograph.com/images/signs/2Taurus-InfoGraphic.jpg",
-      "comments": [
-        { "id": 2, "text": "Comment for Taurus" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/2Taurus-InfoGraphic.jpg"
     },
     {
       "id": 3,
       "name": "Gemini",
       "description": "Expressive and quick-witted, Gemini represents two different personalities in one and you will never be sure which one you will face. They are sociable, communicative and ready for fun, with a tendency to suddenly get serious, thoughtful and restless.",
-      "traits": "Adaptable, outgoing, intelligent",
-      "rulingPlanet": "Mercury",
-      "element": "Air",
-      "symbol": "Twins",
-      "compatibility": "Libra, Aquarius",
-      "imageURL": "https://www.astrograph.com/images/signs/3Gemini-InfoGraphic.jpg",
-      "comments": [
-        { "id": 3, "text": "Comment for Gemini" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/3Gemini-InfoGraphic.jpg"
     },
     {
       "id": 4,
       "name": "Cancer",
       "description": "Emotional and sensitive, Cancer is deeply intuitive and easily influenced by their environment. Cancer can be one of the most challenging zodiac signs to get to know.",
-      "traits": "Emotional, intuitive, loyal",
-      "rulingPlanet": "Moon",
-      "element": "Water",
-      "symbol": "Crab",
-      "compatibility": "Scorpio, Pisces",
-      "imageURL": "https://www.astrograph.com/images/signs/4Cancer-InfoGraphic.jpg",
-      "comments": [
-        { "id": 4, "text": "Comment for Cancer" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/4Cancer-InfoGraphic.jpg"
     },
     {
       "id": 5,
       "name": "Leo",
       "description": "Bold, intelligent, warm, and courageous, fire sign Leo is a natural leader of the Zodiac, ready to blaze a trail, vanquish injustice, and make a name for themselves along the way.",
-      "traits": "Generous, warm-hearted, creative",
-      "rulingPlanet": "Sun",
-      "element": "Fire",
-      "symbol": "Lion",
-      "compatibility": "Aries, Sagittarius",
-      "imageURL": "https://www.astrograph.com/images/signs/5Leo-InfoGraphic.jpg",
-      "comments": [
-        { "id": 5, "text": "Comment for Leo" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/5Leo-InfoGraphic.jpg"
     },
     {
       "id": 6,
       "name": "Virgo",
       "description": "Smart, sophisticated, and kind, Virgo gets the job done without complaining. Virgos are amazing friends, always there to lend a hand and also lend advice.",
-      "traits": "Practical, hardworking, analytical",
-      "rulingPlanet": "Mercury",
-      "element": "Earth",
-      "symbol": "Maiden",
-      "compatibility": "Taurus, Capricorn",
-      "imageURL": "https://www.astrograph.com/images/signs/6Virgo-InfoGraphic.jpg",
-      "comments": [
-        { "id": 6, "text": "Comment for Virgo" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/6Virgo-InfoGraphic.jpg"
     },
     {
       "id": 7,
       "name": "Libra",
       "description": "Intelligent, kind, and always willing to put others before themselves, Libras value harmony in all forms. Ruled by Venus, the planet of beauty, Libra adores a life that looks good.",
-      "traits": "Diplomatic, social, cooperative",
-      "rulingPlanet": "Venus",
-      "element": "Air",
-      "symbol": "Scales",
-      "compatibility": "Gemini, Aquarius",
-      "imageURL": "https://www.astrograph.com/images/signs/7Libra-InfoGraphic.jpg",
-      "comments": [
-        { "id": 7, "text": "Comment for Libra" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/7Libra-InfoGraphic.jpg"
     },
     {
       "id": 8,
       "name": "Scorpio",
       "description": "Passionate, independent, and unafraid to blaze their own trail no matter what others think, Scorpios make a statement wherever they go. They love debates, aren't afraid of controversy, and won't back down from a debate.",
-      "traits": "Resourceful, brave, passionate",
-      "rulingPlanet": "Pluto",
-      "element": "Water",
-      "symbol": "Scorpion",
-      "compatibility": "Cancer, Pisces",
-      "imageURL": "https://www.astrograph.com/images/signs/8Scorpio-InfoGraphic.jpg",
-      "comments": [
-        { "id": 8, "text": "Comment for Scorpio" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/8Scorpio-InfoGraphic.jpg"
     },
     {
       "id": 9,
       "name": "Sagittarius",
       "description": "Independent and strong-willed, Sagittarius personalities are all about going off the beaten path. Sagittarius isn't afraid to step away from the pack and is a natural-born leader who goes after what they want regardless of what other people think.",
-      "traits": "Adventurous, optimistic, philosophical",
-      "rulingPlanet": "Jupiter",
-      "element": "Fire",
-      "symbol": "Archer",
-      "compatibility": "Aries, Leo",
-      "imageURL": "https://www.astrograph.com/images/signs/9Sagittarius-InfoGraphic.jpg",
-      "comments": [
-        { "id": 9, "text": "Comment for Sagittarius" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/9Sagittarius-InfoGraphic.jpg"
     },
     {
       "id": 10,
       "name": "Capricorn",
       "description": "Smart, hardworking, and fully in control of their destiny, a Capricorn will always get what they set their mind to, in both personal and professional life—no excuses. Capricorns may get a reputation as stubborn, but they simply know what they want, and also know how they wish other people would behave.",
-      "traits": "Responsible, disciplined, ambitious",
-      "rulingPlanet": "Saturn",
-      "element": "Earth",
-      "symbol": "Goat",
-      "compatibility": "Taurus, Virgo",
-      "imageURL": "https://www.astrograph.com/images/signs/10Capricorn-InfoGraphic.jpg",
-      "comments": [
-        { "id": 10, "text": "Comment for Capricorn" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/10Capricorn-InfoGraphic.jpg"
     },
     {
       "id": 11,
       "name": "Aquarius",
       "description": "Independent and enigmatical, Aquarians are unique. There is no one quite like an Aquarius, and because each is so incredibly individual, it can be tough to describe them as a group. Aquarians are truth-seekers, and the best way to do that is to read horoscopes.",
-      "traits": "Independent, progressive, humanitarian",
-      "rulingPlanet": "Uranus",
-      "element": "Air",
-      "symbol": "Water Bearer",
-      "compatibility": "Gemini, Libra",
-      "imageURL": "https://www.astrograph.com/images/signs/11Aquarius-InfoGraphic.jpg",
-      "comments": [
-        { "id": 11, "text": "Comment for Aquarius" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/11Aquarius-InfoGraphic.jpg"
     },
     {
       "id": 12,
       "name": "Pisces",
       "description": "Smart, creative, and deeply intuitive, Pisces can be close to psychic. Pisces feel things deeply and have incredibly strong gut reactions. A Pisces 'knows' things from deep within, and can often judge whether a person or situation is good or bad.",
-      "traits": "Compassionate, artistic, gentle",
-      "rulingPlanet": "Neptune",
-      "element": "Water",
-      "symbol": "Fish",
-      "compatibility": "Cancer, Scorpio",
-      "imageURL": "https://www.astrograph.com/images/signs/12Pisces-InfoGraphic.jpg",
-      "comments": [
-        { "id": 12, "text": "Comment for Pisces" }
-      ]
+      "imageURL": "https://www.astrograph.com/images/signs/12Pisces-InfoGraphic.jpg"
     }
   ],
   "comments": [
-    { "id": 1, "zodiacSignId": 1, "text": "Comment for Aries" },
-    { "id": 2, "zodiacSignId": 2, "text": "Comment for Taurus" },
-    { "id": 3, "zodiacSignId": 3, "text": "Comment for Gemini" },
-    { "id": 4, "zodiacSignId": 4, "text": "Comment for Cancer" },
-    { "id": 5, "zodiacSignId": 5, "text": "Comment for Leo" },
-    { "id": 6, "zodiacSignId": 6, "text": "Comment for Virgo" },
-    { "id": 7, "zodiacSignId": 7, "text": "Comment for Libra" },
-    { "id": 8, "zodiacSignId": 8, "text": "Comment for Scorpio" },
-    { "id": 9, "zodiacSignId": 9, "text": "Comment for Sagittarius" },
-    { "id": 10, "zodiacSignId": 10, "text": "Comment for Capricorn" },
-    { "id": 11, "zodiacSignId": 11, "text": "Comment for Aquarius" },
-    { "id": 12, "zodiacSignId": 12, "text": "Comment for Pisces" }
+    {
+      "id": 1,
+      "zodiacSignId": 1,
+      "text": "Comment for Aries"
+    },
+    {
+      "id": 2,
+      "zodiacSignId": 2,
+      "text": "Comment for Taurus"
+    },
+    {
+      "id": 3,
+      "zodiacSignId": 3,
+      "text": "Comment for Gemini"
+    },
+    {
+      "id": 4,
+      "zodiacSignId": 4,
+      "text": "Comment for Cancer"
+    },
+    {
+      "id": 5,
+      "zodiacSignId": 5,
+      "text": "Comment for Leo"
+    },
+    {
+      "id": 6,
+      "zodiacSignId": 6,
+      "text": "Comment for Virgo"
+    },
+    {
+      "id": 7,
+      "zodiacSignId": 7,
+      "text": "Comment for Libra"
+    },
+    {
+      "id": 8,
+      "zodiacSignId": 8,
+      "text": "Comment for Scorpio"
+    },
+    {
+      "id": 9,
+      "zodiacSignId": 9,
+      "text": "Comment for Sagittarius"
+    },
+    {
+      "id": 10,
+      "zodiacSignId": 10,
+      "text": "Comment for Capricorn"
+    },
+    {
+      "id": 11,
+      "zodiacSignId": 11,
+      "text": "Comment for Aquarius"
+    },
+    {
+      "id": 12,
+      "zodiacSignId": 12,
+      "text": "Comment for Pisces"
+    },
+    {
+      "id": "65d5",
+      "comment": "ss",
+      "zodiacSign": "Aries"
+    },
+    {
+      "id": "5790",
+      "comment": "hey"
+    },
+    {
+      "id": "9345",
+      "comment": "d"
+    },
+    {
+      "id": "9e6c",
+      "comment": "sss"
+    },
+    {
+      "id": "f505",
+      "comment": "Batsheva is a Taurus"
+    },
+    {
+      "id": "f68b",
+      "comment": "bp is a taurus"
+    },
+    {
+      "id": "f10b",
+      "comment": "hey"
+    },
+    {
+      "id": "20d8",
+      "comment": "hey"
+    },
+    {
+      "id": "5f92",
+      "comment": "hey"
+    },
+    {
+      "id": "564e",
+      "comment": "hey"
+    },
+    {
+      "id": "28e1",
+      "comment": "hey"
+    },
+    {
+      "id": "2983",
+      "comment": "hello",
+      "zodiacSign": "Taurus"
+    },
+    {
+      "id": "dbd7",
+      "comment": "Desiah is a Sagitarius",
+      "zodiacSign": "Sagittarius"
+    }
   ],
   "subscriptions": [
-    { "id": 1, "email": "example@email.com" }
+    {
+      "id": 1,
+      "email": "example@email.com"
+    }
   ]
 }

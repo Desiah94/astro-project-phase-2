@@ -136,64 +136,41 @@
     },
     {
       "id": "65d5",
-      "comment": "ss",
+      "comment": "Hello I am Ikram and this is my sun sign",
       "zodiacSign": "Aries"
     },
     {
-      "id": "5790",
-      "comment": "hey"
-    },
-    {
-      "id": "9345",
-      "comment": "d"
-    },
-    {
-      "id": "9e6c",
-      "comment": "sss"
-    },
-    {
-      "id": "f505",
-      "comment": "Batsheva is a Taurus"
-    },
-    {
-      "id": "f68b",
-      "comment": "bp is a taurus"
-    },
-    {
-      "id": "f10b",
-      "comment": "hey"
-    },
-    {
-      "id": "20d8",
-      "comment": "hey"
-    },
-    {
-      "id": "5f92",
-      "comment": "hey"
-    },
-    {
-      "id": "564e",
-      "comment": "hey"
-    },
-    {
-      "id": "28e1",
-      "comment": "hey"
-    },
-    {
-      "id": "2983",
-      "comment": "hello",
-      "zodiacSign": "Taurus"
-    },
-    {
-      "id": "dbd7",
-      "comment": "Desiah is a Sagitarius",
+      "id": "d035",
+      "comment": "My name is Desiah & im a Sagaterrorist!",
       "zodiacSign": "Sagittarius"
+    },
+    {
+      "id": "9025",
+      "comment": "hwllo"
+    },
+    {
+      "id": "971c",
+      "comment": ""
+    },
+    {
+      "id": "c8ba",
+      "comment": "Im Batsheva and I'm a Taurus",
+      "zodiacSign": "Taurus"
     }
   ],
   "subscriptions": [
     {
       "id": 1,
       "email": "example@email.com"
+    },
+    {
+      "id": "0529",
+      "subscribed": true
+    },
+    {
+      "id": "1eb2",
+      "subscribed": true,
+      "email": "desiah94@gmail.com"
     }
   ]
 }
